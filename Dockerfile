@@ -1,8 +1,8 @@
-FROM golang:1.19.0
+FROM golang:1.21.0
 
 WORKDIR /usr/src/app
 
-# RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/cosmtrek/air@latest
 
-# COPY . .
-# RUN go mod tidy
+COPY . .
+RUN go mod tidy
