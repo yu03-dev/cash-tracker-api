@@ -9,7 +9,7 @@ type categoryRepository struct {
 	db *gorm.DB
 }
 
-func NewCategoryRepository(db *gorm.DB) domain.CategoryRepository {
+func NewGormCategoryRepository(db *gorm.DB) domain.CategoryRepository {
 	return &categoryRepository{db}
 }
 

@@ -9,7 +9,7 @@ type expenseRepository struct {
 	db *gorm.DB
 }
 
-func NewExpenseRepository(db *gorm.DB) domain.ExpenseRepository {
+func NewGormExpenseRepository(db *gorm.DB) domain.ExpenseRepository {
 	return &expenseRepository{db}
 }
 
